@@ -1,12 +1,14 @@
+Scripts are found in block_times/scripts as well as scripts_files/scripts
+
 mrt-timing-01.sh and mrt_ folders relate to Part II: Reproduce RSFgen
 
 mrt-timing-02.sh and mrt_ini folders relate to Part II: Control ITI
 
 mrt-timing-03.sh and mrt_lnr folders relate to Part II: Limit the number of repetitions
 
-Unfortunately I ran out of time, so I wasn't able start on Part III yet, but I intend to complete and push that later just so I can make sure I'm doing that stuff correctly, even if I can't get the credit for it.
+Only 90 minutes late!  
 
-The scripts are messy, but I'm aware of that and intend to clean them up later.
+The scripts are messy, but I'm aware of that and intend to clean them up later (or not).
 
 ### Q1
 
@@ -27,3 +29,19 @@ Not only are the stimuli more spaced out temporally, but they are ordered much m
 ### Q4
 
 Optimal designs offer stimuli that are evenly spaced and non-consecutive, meaning stimuli of the same type do not occur back-to-back. 
+
+### Q5
+
+The efficiency for the contrasts are very similar for 20s and 50s, but jump up considerably for 100s.  A-C contrasts have slightly worse design efficiency for 20s and 50s, but much worse design efficiency for 100s.  Those differences in efficiency are due to the increased difference between 'steps'.  For example, the comparison between A(0) and C(200) is more significant than the difference between A(0) and B(100).
+
+### Q6
+
+The efficiency decreases as the -polort value increases.  I was at a loss for what -polart was doing, so I Googled it: the pnum value attached to -polort set the degree with which to model.  I'd assume that the high the value, the less 3dDeconvolve tries to model the baseline and thus the less efficient it is.  Somehow.
+
+### Q7
+
+An alternating block design that also includes a control block would be very effective.  The extended duration of the block would allow for each stimulus to have a pronounced effect and the control blocks would establish a baseline.
+
+### Q8
+
+Due to the sheer number of visual conditions an event-related design would be most effective as it would better allow for more in-depth comparisons between conditions.  Additionally, event-related designs can more effectively estimate the hemodynamic response, making it easier to infer the relative timing of neuronal activities. 
